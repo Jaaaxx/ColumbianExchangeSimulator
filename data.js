@@ -27,60 +27,6 @@ const upgradeData = [
         "tier": 1,
         "description": "Special threads made of flax coated in beeswax make for stronger saddles"
     }
-    // {
-    //     "name": "Cardboard Sticks",
-    //     "type": "stick",
-    //     "tier": 1,
-    //     "description": "Cardboard popsicle sticks allow for easier manufacturing."
-    // },
-    // {
-    //     "name": "Wooden Sticks",
-    //     "type": "stick",
-    //     "tier": 2,
-    //     "description": "Sturdy and reliable."
-    // },
-    // {
-    //     "name": "Plastic Sticks",
-    //     "type": "stick",
-    //     "tier": 3,
-    //     "description": "Plastic popsicle sticks (Warning: not liable for environmental damage)"
-    // },
-    // {
-    //     "name": "Big Bucket",
-    //     "type": "bucket",
-    //     "tier": 1,
-    //     "description": "More space in the bucket, more droplets to be held!"
-    // },
-    // {
-    //     "name": "Bigger Bucket",
-    //     "type": "bucket",
-    //     "tier": 2,
-    //     "description": "Even more space in the bucket, even more droplets to be held!"
-    // },
-    // {
-    //     "name": "Biggest Bucket",
-    //     "type": "bucket",
-    //     "tier": 3,
-    //     "description": "The most space in the bucket, the most droplets to be held!"
-    // },
-    // {
-    //     "name": "Droplet Collectors",
-    //     "type": "collector",
-    //     "tier": 1,
-    //     "description": "Little ants pick up bonus popsicles for you!"
-    // },
-    // {
-    //     "name": "Fire Ants",
-    //     "type": "collector",
-    //     "tier": 2,
-    //     "description": "Probably shouldn't eat those."
-    // },
-    // {
-    //     "name": "Wasps",
-    //     "type": "collector",
-    //     "tier": 3,
-    //     "description": "Okay. Do NOT eat the wasp popsicles."
-    // }
 ]
 
 const newsData = [

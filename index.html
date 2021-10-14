@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Columbian Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div id="cover" class="hidden">
+<div id="core_areas" class="hidden">
+    <div id="leftArea">
+        <div id="clickable-div-bigPopsicle"></div>
+        <div id="clickable-div-bucket"></div>
+        <canvas id="popCanvas"></canvas>
+    </div>
+    <div id="centerArea">
+        <div id="upperCenter">
+            <div id="newsDiv">
+                <p id="newsText"></p>
+            </div>
+        </div>
+        <div id="tooltipCanvasDiv">
+            <canvas id="tooltipCanvas"></canvas>
+        </div>
+        <div id="lowerCenter">
+        </div>
+    </div>
+    <div id="rightArea">
+        <div id="upRightArea">
+            <h1 id="upRightAreaLabel">Upgrades/Buildings</h1>
+        </div>
+        <div id="upgradeRows"></div>
+        <div id="buyRows">
+            <div id="mysteryBuilding" class="buyBuilding disabled">
+                <div class="namePriceRows">
+                    <span class="buyBuildingLabel">???</span>
+                    <br>
+                    <span class="buyBuildingCost" id="mysteryCost"></span>
+                </div>
+                <span class="ownedBuilding">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -58,7 +58,7 @@ const newsData = [
 const buildingsData = [
     {
         "name": "Horse",
-        "baseCost": 5,
+        "baseCost": 1,
         "baseProduction": 1,
         "description": "Horses allowed native americans easier travel to find food and other supplies."
     },

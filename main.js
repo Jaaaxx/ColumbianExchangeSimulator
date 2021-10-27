@@ -599,6 +599,8 @@ window.onload = function() {
 
             if (u instanceof Upgrade || u instanceof Building) {
                 let flaImg = images["upgrade.png"].cloneNode(false);
+                if (u instanceof Upgrade && u.type === "stick")
+                    flaImg = images['icon-caravel.png'];
                 if (u instanceof Building && u.name === "Banana" || u instanceof Upgrade && u.type === "banana")
                     flaImg = images["icon-banana.png"].cloneNode(false);
                 else if (u instanceof Building && u.name === "Horse" || u instanceof Upgrade && u.type === "horse")
@@ -915,7 +917,7 @@ window.onload = function() {
         boosts.push(b);
         el.removeChild(el.children[0]);
         let txt = document.createElement('h1');
-        txt.textContent = boostsData[b.name].name + "!";
+        txt.textContent = "Oh No! " + diseaseNames[Math.floor(Math.random()*diseaseNames.length)] + "!";
         txt.classList.add("goldenPopsicleText");
         el.appendChild(txt);
         el.classList.add("goldenPopsicleDivDis", "goldenPopsicleDivBehind");
@@ -1225,9 +1227,15 @@ class Upgrade {
 
         switch (this.type){
             case "horse": {
-                this.cost = buildings[this.type].baseCost * 5 *
+                this.cost = buildings[this.type].baseCost * 2 *
                     (growthRate ** this.requiredBuildings) / growthRate;
                 this.info = "The manual harvesting and horses are<#f1f1f1 twice</> as efficient."
+                break;
+            }
+            case "stick": {
+                this.cost = 5 * 2 *
+                    (growthRate ** this.tier) / growthRate;
+                this.info = "Larger shipments generate<#f1f1f1 twice</> as much revenue."
                 break;
             }
             default: {
@@ -1255,7 +1263,7 @@ class Upgrade {
                 break;
             }
             case ("stick"): {
-                upgrade = images['icon-stick.png'].cloneNode(false);
+                upgrade = images['icon-caravel.png'].cloneNode(false);
                 break;
             }
             case ("collector"): {

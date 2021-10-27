@@ -7,6 +7,7 @@ const imageData = [
     "boat-clicked.png",
     "banana.png",
     "icon-banana.png",
+    "icon-caravel.png",
     "icon-horse.png",
     "coffee.png",
     "icon-coffee.png",
@@ -26,6 +27,18 @@ const upgradeData = [
         "type": "horse",
         "tier": 1,
         "description": "Special threads made of flax coated in beeswax make for stronger saddles"
+    },
+    {
+        "name": "Carrack",
+        "type": "stick",
+        "tier": 1,
+        "description": "Larger, faster ships than the caravel; developed in portugal in the 14th to 15th centuries"
+    },
+    {
+        "name": "Galleon",
+        "type": "stick",
+        "tier": 2,
+        "description": "Armed cargo carriers developed from the Carrack; main vessels drafted for use as warships"
     }
 ]
 
@@ -51,21 +64,26 @@ const buildingsData = [
     },
     {
         "name": "Banana",
-        "baseCost": 25,
+        "baseCost": 10,
         "baseProduction": 5,
         "description": "Mostly imported from Belize, bananas flourished after reaching the new world."
     },
     {
         "name": "Coffee",
-        "baseCost": 125,
-        "baseProduction": 25,
+        "baseCost": 21,
+        "baseProduction": 10,
         "description": "Coffee originated in tropical Africa, eventually reaching the New World."
     }
 ]
 
 const boostsData = {
     'loseFood': {
-        'name': 'Oh No! Smallpox',
-        'description': 'Smallpox has broken out among your colonists! Losing money!'
+        'name': 'Diseased!',
+        'description': 'Disease has broken out among your colonists! Losing money!'
     }
 }
+
+const diseaseNames = [
+    'Smallpox', 'Measles', 'Typhus', 'Cholera'
+]
+
